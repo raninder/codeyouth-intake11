@@ -6,3 +6,15 @@
 
 
  - Headings and paragraph
+ - Formatting tags
+ - Lists : 3 kinds of lists
+ 	 - Ordered Lists
+	 - unordered Lists
+	 - Defintion Lists
+
+	 1. Web development
+	 		. HTML
+			. CSS
+		  . JS
+	 2. Maths
+	 3. Science
