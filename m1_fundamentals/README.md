@@ -18,3 +18,8 @@
 		  . JS
 	 2. Maths
 	 3. Science
+
+	 Exercises:
+	 Ex1: https://ilyabirman.net/meanwhile/pictures/three-level-headings@2x.png (https://ilyabirman.net/wireless-dj/help/)
+	Ex2: https://miro.medium.com/v2/resize:fit:1400/1*CQtt0HJ7858Y44OUDoxD5A.jpeg
+	Ex3: https://media.geeksforgeeks.org/wp-content/uploads/20220127195958/nestedlist1.png
