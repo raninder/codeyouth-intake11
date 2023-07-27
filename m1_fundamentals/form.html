@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		label{
+			display:inline-block;
+			width:100px;
+			text-align: left;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<!-- form attributes:  action="file name that will process form data" method="get/post" -->
+	<form>
+		<label for="fn">First Name:</label>
+		<input type="text" id="fn" name="fname" size="15" maxlength="5" placeholder="first name" required/> 
+		<br><br>
+
+		<label for="lname">Last Name:</label>
+		<input type="text" id="lname" name="lname" />  
+		<br><br>
+
+		<label for="paswd">Password:</label>
+		<input type="password" id="paswd" name="paswd" />  
+		<br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" />  
+		<br><br>
+
+		<label for="date">Date of Birth:</label>
+		<input type="date" id="date" name="date" />  
+		<br><br>
+
+		<label for="phone">Enter your phone number:</label>
+  	<input type="tel" id="phone" name="phone" placeholder="123-45-678"pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+		<br><br>
+
+		<label for="gender">Gender:</label>
+		<input type="radio" id="gender" name="gender" value="male" checked>Male </input>
+		<input type="radio" id="gender" name="gender" value="female"> Female</input>
+		<input type="radio" id="gender" name="gender" value="other"> Other</input>
+		<br><br>
+
+		<label for="Hobby">Hobbies:</label>
+		<input type="checkbox" id="hobby" name="dance" value="dance" checked>Dancing </input>
+		<input type="checkbox" id="hobby" name="music" value="music"> Music</input>
+		<input type="checkbox" id="hobby" name="reading" value="reading"> Reading</input>
+		<br><br>
+
+		<label for="country">Country:</label>
+		<select name="country" id="country">
+			<option value="canada">Canada</option>
+			<option value="US">US</option>
+			<option value="UK" selected>UK</option>
+		</select>
+		<br><br>
+		
+		<label for="about">About:</label>
+		<textarea id="about" name="about" rows="3" cols="10" placeholder="write about yourself..."></textarea>
+		<br><br>
+
+		<label for="upload">Upload:</label>
+		<input type="file" id="uplaod" accept=".pdf,.jpeg,.docx" />
+		<br><br>
+
+		<input type="submit" value="Register"/> 
+		<input type="reset" value="Reset" />
+		<input type="button" value="Calculate" onclick="alert('thanks')" />
+	</form>
+</body>
+</html>
