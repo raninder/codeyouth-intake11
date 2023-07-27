@@ -31,3 +31,4 @@ Ex1: https://miro.medium.com/v2/resize:fit:1400/1*CQtt0HJ7858Y44OUDoxD5A.jpeg
 Ex2: https://www.canadaflowers.ca/  4 images in a row 
 Ex3: clicking on one image open up another page with big picture and description
 Ex4: when clicking on one brief news, opens another file with detail
+Ex5: make a top link at the bottom and when you click on it, it will take you to the top
