@@ -12,11 +12,17 @@
 			text-align: left;
 			color: blue;
 		}
+		i{
+			margin:15px;
+		}
 	</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<!-- form attributes:  action="file name that will process form data" method="get/post" -->
 	<form>
+		<fieldset style="width:500px">
+			<legend>Register</legend>
 		<label for="fn">First Name:</label>
 		<input type="text" id="fn" name="fname" size="15" maxlength="5" placeholder="first name" required/> 
 		<br><br>
@@ -72,6 +78,12 @@
 		<input type="submit" value="Register"/> 
 		<input type="reset" value="Reset" />
 		<input type="button" value="Calculate" onclick="alert('thanks')" />
+		<br><br>
+
+		<i class="fa fa-facebook-official" ></i>
+		<i class="fa fa-facebook-official"></i>
+		<i class="fa fa-facebook-official"></i>
+	</fieldset>
 	</form>
 </body>
 </html>
