@@ -43,3 +43,14 @@ Ex5: make a top link at the bottom and when you click on it, it will take you to
 Ex1: https://www.w3.org/wiki/images/0/01/Figure30.png
 Ex2: https://colorlib.com/wp/wp-content/uploads/sites/2/free-html5-and-css3-login-forms.jpg
 Ex3: https://s38924.pcdn.co/wp-content/uploads/2018/08/registration-form-design.jpg
+
+
+28-07-2023
+# tables
+# iframes
+# audio/video
+Ex1: https://www.w3.org/TR/html401/images/mergedcells.gif
+Ex2: https://www.123formbuilder.com/docs/configure-google-maps-with-your-api/
+Ex3: mixtute of this page
+https://samplelib.com/sample-mp3.html
+https://samplelib.com/sample-mp4.html
