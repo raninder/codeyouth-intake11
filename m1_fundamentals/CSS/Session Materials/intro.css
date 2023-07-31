@@ -1,0 +1,48 @@
+p {
+    color:red;
+}
+
+#idSelector {
+   color: blue; 
+}
+
+.myListItems {
+    color: green;
+    background-color: blue;
+}
+
+#dimentionDiv{
+    background-color: red;
+    width: 50%;
+    height: 100px;
+}
+
+.child{
+    background-color: blue;
+    height: 25px;
+    width: 50%;
+}
+
+#borderDiv{
+    width: 500px;
+    height: 25px;
+    border: solid;
+}
+
+.fakeButton{
+    width: 150px;
+    height: 75px;
+    background-color: red;
+    border-radius: 50px;
+}
+
+#font{
+    font-size: 26px;
+    font-weight: bold;
+    font-family: cursive;
+    text-decoration: wavy;
+}
+
+a{
+    text-decoration: none;
+}
