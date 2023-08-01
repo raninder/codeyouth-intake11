@@ -37,3 +37,25 @@ Check out the Session Materials folder for all files used during lessons
         <li>Red</li>
     </ul>
     <!-- Change the color of each item in the list to the color that it says. -->
+
+
+<h3>Margin, Padding, Display, Selectors</h3>
+
+
+    https://cdn.discordapp.com/attachments/1045366403475177495/1135968723715493899/image.png
+
+
+    <!-- HTML for Ex:1 and Ex:2 -->
+
+    <div id="parent">
+        <p class="child">Child 1</p>
+        <p class="child">Child 2</p>
+        <p class="child">Child 3</p>
+        <button class="child">Child Button</button>
+    </div>
+    
+    <!-- Ex:1 -->
+    <!-- Select all the child elements in the parent div and change there font-weight to bold -->
+
+    <!-- Ex:2 -->
+    <!-- Select the button inside the parent div and remove it's border -->
