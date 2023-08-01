@@ -1,4 +1,5 @@
-This is where the exersises will be
+This is where the exersises will be.
+Check out the Session Materials folder for all files used during lessons
 
 <h3>Selectors, Color, Background-color, font-family, font-size, font-weight</h3>
 
@@ -27,3 +28,12 @@ This is where the exersises will be
 
     <!-- Ex:3 -->
     <!-- Select all li tags in the ul. Change the font-size to 26px -->
+
+
+    <ul>
+        <li>Green</li>
+        <li>Blue</li>
+        <li>Yellow</li>
+        <li>Red</li>
+    </ul>
+    <!-- Change the color of each item in the list to the color that it says. -->
