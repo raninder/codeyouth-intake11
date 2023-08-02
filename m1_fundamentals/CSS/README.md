@@ -59,3 +59,67 @@ Check out the Session Materials folder for all files used during lessons
 
     <!-- Ex:2 -->
     <!-- Select the button inside the parent div and remove it's border -->
+
+    
+    <!-- HTML for Ex:3 and Ex:4 -->
+
+    <div class="header">
+        <nav id="pageNav">
+            <a class="navLinks" href="#">Home</a>
+            <a class="navLinks" href="/about">About</a>
+            <a class="navLinks" href="/contact">Contact Us</a>
+        </nav>
+        <nav id="userButtons">
+            <a class="navLinks" href="/login">Login</a>
+            <a class="navLinks" href="/signup">Sign Up</a>
+        </nav>
+    </div>
+
+    <!-- Ex:3 -->
+    <!-- Select the Home, About, and Contact us, a tags and remove the underline, and change the color to black -->
+
+    <!-- Ex:4 -->
+    <!-- Change all navLinks to the font sans-serif, and change there font-size to 26px -->
+
+
+
+    <!-- Psuedo Classes -->
+
+    <!-- HTML for Ex:5 and Ex:6 -->
+
+    <div class="hoverMe"></div>
+
+    <style>
+        .hoverMe{
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+        }
+    </style>
+
+    <!-- Ex:5 -->
+    <!-- Change the background-color of the hoverMe div to red and have the cursor change to a pointer when it is hovered -->
+
+    <!-- Ex:6 -->
+    <!-- When the hoverMe div is clicked on change the background-color to yellow -->
+
+
+    
+    <!-- HTML for Ex:7 and Ex:8 -->
+
+    <ul class="listOfFish">
+        <li>Sturgeon</li>
+        <li>Salmon</li>
+        <li>Tuna</li>
+        <li>Rainbow Trout</li>
+        <li>Small Mouth Bass</li>
+        <li>Large Mouth Bass</li>
+        <li>Catfish</li>
+        <li>Red Snapper</li>
+    </ul>
+
+    <!-- Ex:7 -->
+    <!-- Give every odd li in the list of fish the background-color red-->
+
+    <!-- Ex:8 -->
+    <!-- Add a style so that whenever you hover over an li in the list of fish the fish name will become 2 times larger -->
