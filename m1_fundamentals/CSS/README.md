@@ -123,3 +123,6 @@ Check out the Session Materials folder for all files used during lessons
 
     <!-- Ex:8 -->
     <!-- Add a style so that whenever you hover over an li in the list of fish the fish name will become 2 times larger -->
+
+<h3>Position, Flex-box</h3>
+    Google Page Assignment
