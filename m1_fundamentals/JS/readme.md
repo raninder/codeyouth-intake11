@@ -60,3 +60,37 @@ let table = 199.99;
 let notebook = 4.59;
 
 
+
+<h3>Functions</h3>
+
+// Write a function that console.logs hello world and call it.
+
+
+
+// Write a function with the parameter, howdy, console.log the value of howdy
+
+
+
+// Write a function that takes two arguments. Add them together;
+
+
+// Write a function that will calculate the tax of a number passed through.
+
+
+// Write and call a function that will return the string howdy
+
+
+
+
+
+// Write a function for addition, subtraction, multiplication, and division. Have all functions return the value.
+// Bonus, try using default parameters to avoid returning NaN on any of the functions
+
+
+
+// Write a function that will console.log a madlib. use prompt(); to get a noun, adverb, verb, and an adjective from the user.
+
+
+
+// Write a function that will return a random number from 0 - 100;
+
