@@ -126,3 +126,15 @@ function isLeapYear(year){
 }
 
 console.log(isLeapYear(2000));
+
+
+
+
+
+
+
+
+
+
+
+
