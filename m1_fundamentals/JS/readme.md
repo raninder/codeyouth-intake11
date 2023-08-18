@@ -162,3 +162,23 @@ let randomNum = Math.floor(Math.random()*101);
         //5 Loop through the array until you find the word language, when you find it console.log it's index in the array
         let words = ["A","sentence","is","the","basic","unit","of","language","which","expresses","a","complete","thought"]
 
+        //6 Find the sum of all the numbers in the array
+        let cart = [5.99, 11.59, 4.01, 25.78, 508.99, 12.00];
+
+
+        //7 Check if any elements appear in both arrays. If they do, console.log that they are banned
+
+        let inLine = ["Thomas", "Jurimo", "Wemby", "Grimold", "Fomsly"];
+        let banned = ["Wemby", "Frombert", "Thirna", "Thomas", "Jurimo"];
+
+
+
+        //8. Find the smallest number in the array 
+
+        let findArr = [5,74,12,35,69,635,4,71,4,52,58,415,24];
+
+
+        //9. Sort the array from smallest to largest 
+
+        let sortMe = [5,74,12,35,69,635,4,71,4,52,58,415,24];
+
