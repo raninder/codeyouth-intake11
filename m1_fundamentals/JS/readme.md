@@ -182,3 +182,24 @@ let randomNum = Math.floor(Math.random()*101);
 
         let sortMe = [5,74,12,35,69,635,4,71,4,52,58,415,24];
 
+<h3>Array Methods</h3>
+
+    // Using an array method, add the string "World" to this array
+    let helloWorld = ["Hello"];
+
+
+    // Using an array method, remove the last element from the array
+    let oneTwoThree = [1,2,3,4];
+
+    
+    // Using an array method, add the word "Lorem" to the start of the following array
+    let loremIpsum = [ "ipsum", "dolor", "sit", "amet."];
+
+
+    // Create a sentence out of the following array
+    let sentence = ["The","quick","brown","fox","jumps","over","the","lazy","dog"]
+
+
+
+    // Using only pop(), push(), unshift(), and shift() make weekDays start at monday and end at sunday in the correct order
+    let weekDays = ["Friday", "Tuesday","Wednesday","Thursday","Sunday","Monday","Saturday","PlaceHolder"]
