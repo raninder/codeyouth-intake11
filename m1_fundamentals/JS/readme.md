@@ -203,3 +203,29 @@ let randomNum = Math.floor(Math.random()*101);
 
     // Using only pop(), push(), unshift(), and shift() make weekDays start at monday and end at sunday in the correct order
     let weekDays = ["Friday", "Tuesday","Wednesday","Thursday","Sunday","Monday","Saturday","PlaceHolder"]
+
+    // Fix this code so that there will never be a duplicate number added to the array
+    let values = [];
+
+    for (let i = 0; i < 5; i++) {
+        let randomNumber = Math.floor(Math.random() * 11);
+        values.push(randomNumber);
+    }
+
+    console.log(values);
+
+
+    
+
+    // Add everyone from the toBeAdded array to the banList;
+
+
+    let toBeAdded = ["Jomsly", "Henrick", "Darsha"]
+    let banList = ["Budly","Gurtrood","dimsly"]
+
+
+
+
+    // using the map method, Create a new array for the tax on each transaction
+
+    let transactions = [599.99, 22.21, 10.18, 108.97, 45.52];
