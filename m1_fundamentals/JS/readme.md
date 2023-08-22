@@ -229,3 +229,44 @@ let randomNum = Math.floor(Math.random()*101);
     // using the map method, Create a new array for the tax on each transaction
 
     let transactions = [599.99, 22.21, 10.18, 108.97, 45.52];
+
+<h3>Objects</h3>
+
+        //1 Create an object that contains a first name and a last name.
+
+
+        //2 Create an object thet contains an array  
+        
+
+        //3 Use this object to console.log the first name, email, and phone number.
+
+        let userObject = {
+            first_name:"Jurimo",
+            last_name:"Datatag",
+            email:"jD@gmail.com",
+            phone:"905-905-9055"
+        }
+
+
+        //4 do the same as the last question but for each person in this array
+
+        let users = [
+            {
+                first_name:"Jurimo",
+                last_name:"Datatag",
+                email:"jD@gmail.com",
+                phone:"905-905-9055"
+            },
+            {
+                first_name:"Bingle",
+                last_name:"Dorf",
+                email:"bingD@gmail.com",
+                phone:"995-558-4101"
+            },
+            {
+                first_name:"Sarsha",
+                last_name:"Warsha",
+                email:"sarshwarsh@gmail.com",
+                phone:"787-747-5754"
+            }
+        ]
