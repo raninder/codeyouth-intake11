@@ -270,3 +270,35 @@ let randomNum = Math.floor(Math.random()*101);
                 phone:"787-747-5754"
             }
         ]
+
+<h3>DOM</h3>
+    
+    <p>Hello</p>
+    <p>World</p>
+
+    <div id="myDiv">
+        <p class="nestedP">I don't want to be green</p>
+        <p class="nestedP">I do want to be green</p>
+    </div>
+
+    <a id="google">google.com</a>
+
+    <script>
+
+        // Select all the p tags in the document and change their color to green
+
+
+        // Give the myDiv div a border that is 1px width and solid style.
+
+        
+        // Change the color of the p tag that says it doesn't want to be green to black
+
+
+        // Console.log the innerText of every p tag on this page.
+
+
+        // go to this page and find all of the li tags on it, https://www.w3schools.com/. Console.log the innerHTML of each element.
+
+
+        // Make the a tag in the document open google.com in a new tab when it is clicked.
+    </script>

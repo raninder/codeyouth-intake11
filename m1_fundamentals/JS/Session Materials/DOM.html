@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="selectMe">Select Me</p>
+    <p id="selectMe">Select Me</p>
+
+    <p>Don't select me</p>
+    <!-- <script  src="DOM.js"></script> -->
+
+    <div class="myDiv">One</div>
+    <div class="myDiv">Two</div>
+    <div class="myDiv">Three</div>
+
+
+    <a class="setAttributes">Click Me</a>
+
+
+    <div class="parent">
+        <p class="child">HELLO WORLD</p>
+    </div>
+
+    <script>
+        console.log(document.getElementsByTagName("p"))
+        console.log(document.getElementById("selectMe"))
+        let myDivs = document.getElementsByClassName("myDiv")
+
+        for(let i = 0; i < myDivs.length; i++){
+            console.log(myDivs[i])
+        }
+
+        for(let i in myDivs){
+            console.log(myDivs[i])
+        }
+
+        let selectMe = document.getElementById("selectMe");
+        selectMe.style.color = "red"
+        selectMe.style.backgroundColor = "green"
+
+        console.log(myDivs)
+        for(let i = 0; i < myDivs.length; i++){
+            myDivs[i].style.border = "1px solid"
+        }
+
+
+        let a = document.getElementsByClassName("setAttributes")[0]
+        a.href = "anything"
+        a.setAttribute("spagetti", "false")
+        a.setAttribute("target", "_blank")
+        a.setAttribute("style", "color:red; background-color:green; font-size:15vh;");
+        a.classList.add("clicked");
+        console.log(a.classList)
+        a.classList.remove("clicked")
+
+        let helloWorld = document.getElementsByClassName("child")[0];
+        console.log(helloWorld.innerText)
+        helloWorld.innerText = "Goodbye"
+        console.log(helloWorld.innerText)
+
+        let parent = document.getElementsByClassName("parent")[0]
+        console.log(parent.innerHTML)
+        parent.innerHTML = '<h3>Hello World</h3>'
+        console.log(parent.innerHTML)
+        parent.innerHTML = 'Hello World'
+    </script>
+</body>
+</html>
