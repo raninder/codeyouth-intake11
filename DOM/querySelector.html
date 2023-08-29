@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div id="div1">
+	<h1 class="blue">Heading1</h1>
+	<p class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reprehenderit accusamus voluptate deserunt at doloribus consequatur inventore, tenetur distinctio quas debitis rem nulla, in quos necessitatibus ipsam a ex ipsa.</p>
+	<p id="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, eius! Laborum eaque modi reiciendis perspiciatis dolorem quae velit! Ipsam reprehenderit iusto reiciendis saepe ut enim temporibus adipisci unde voluptatem eaque.</p>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia vel, facere nobis corporis possimus, dignissimos vitae maxime doloremque tempora odio veniam aperiam aliquam dolore! Voluptate aut explicabo possimus delectus eligendi.</p>
+	</div>
+	<h2>Heading2</h2>
+	<p class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga magni unde dicta aliquid commodi rerum quam, eligendi, eveniet ipsam odit minus odio quidem reprehenderit est quod. Consequuntur officia quod dolor?</p>
+<button onclick="change()">Click Me</button>
+<script>
+	
+// const ele=document.querySelector(".red");
+// ele.style.color="red";
+function change(){
+const items = document.querySelectorAll("p.blue")
+items.forEach((i)=>i.style.color="blue")
+}
+</script>
+</body>
+</html>
