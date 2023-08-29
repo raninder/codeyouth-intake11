@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Background Image -->
+
+    <style>
+        .image{
+            width: 100px;
+            height: 100px;
+            background-image: url('https://i.guim.co.uk/img/media/5dab212de07d8009dd06560efeb1ac87b114e23d/0_640_4183_2510/master/4183.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=7c9461c31fb8530f24343e669d6730ba');
+        }
+    </style>
+
+    <div class="image">
+
+    </div>
+
+
+    <!-- Overflow -->
+
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+        }
+        .parent{
+            border: 1px solid;
+            width: 100px;
+            height: 100px;
+            overflow: auto;
+        }
+        .child{
+            width: 50px;
+            height: 150px;
+            background-color: red;
+        }
+    </style>
+
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+
+
+<!-- Box-Shadow -->
+
+
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+        }
+
+        .parent2 {
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    box-shadow: 16px 20px 12px 6px;
+}
+    </style>
+
+    <div class="parent2"></div>
+    
+
+    <style>
+
+.shadow {
+    text-shadow: -6px 1px 5px;
+}
+    </style>
+
+
+    <p class="shadow">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum natus corporis, praesentium quas quam veniam illum quidem repellendus reprehenderit repellat nobis recusandae voluptas nisi ut assumenda quod id, aliquam quaerat!</p>
+
+
+    <!-- Object-Fit -->
+
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+        }
+
+        .imgDiv{
+            width: 500px;
+            height: 100px;
+        }
+        .myImage{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+    <div class="imgDiv">
+    <img class="myImage" src="./nationalgeographic_2626949.jpg" alt="">
+    </div>
+
+
+
+    <style>
+        .hideMe{
+            width: 500px;
+            height: 250px;
+            background-color: red;
+            display: none;
+        }
+        .after{
+            width: 500px;
+            height: 250px;
+            background-color: red;
+        }
+    </style>
+
+    <div class="hideMe">
+
+    </div>
+    <div class="after"></div>
+
+
+    <style>
+        .wide{
+            width: calc(100vh - 50px);
+            margin: calc(5% - 50px);
+            height: 50px;
+            background-color: green;
+        }
+    </style>
+
+    <div class="wide">
+
+    </div>
+
+    <div class="box">
+        <p></p>
+    </div>
+    <div class="box">
+        <p></p>
+    </div>
+    <div class="box">
+        <p></p>
+    </div>
+    <div class="box">
+        <p></p>
+    </div>
+
+</body>
+</html>

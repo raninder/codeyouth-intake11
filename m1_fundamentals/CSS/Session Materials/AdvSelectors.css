@@ -1,0 +1,47 @@
+#parent p{
+    color: red;
+}
+
+.numberList li{
+    color: blue;
+}
+
+.fishList li{
+    color: red;
+}
+
+.myDiv > p{
+    color: red;
+}
+
+#hoverMe:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.page:visited{
+    color: orange;
+}
+
+.page:link{
+    color: red;
+}
+
+.page:active{
+    background-color: green;
+}
+
+.page, #bottomPage, p:hover{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+}
+
+.animalList li:nth-child(even){
+    background-color: yellow;
+}
+
+table tr:nth-child(even){
+    background-color: grey;
+}
+
