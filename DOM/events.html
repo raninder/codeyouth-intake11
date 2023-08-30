@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1 onclick="highlight(this)">Heading1</h1>
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est placeat perspiciatis accusamus voluptas debitis officiis dignissimos, vitae blanditiis ut, aliquam, expedita nesciunt! Pariatur sapiente sed eveniet esse rerum nemo.</p>
+	<button ondblclick="highlight1()" onmouseover="change()">Click me</button>
+	<script>
+		function highlight1(){
+			const p=document.querySelector("p");
+			p.style.backgroundColor="yellow"
+		}
+
+		function highlight(element){
+			element.style.backgroundColor="yellow"
+		}
+		function change(){
+			const btn = document.querySelector("button")
+			btn.style.backgroundColor="black"
+			btn.style.color="white"
+		}
+	</script>
+</body>
+</html>

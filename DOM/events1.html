@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Heading1</h1>
+	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est placeat perspiciatis accusamus voluptas debitis officiis dignissimos, vitae blanditiis ut, aliquam, expedita nesciunt! Pariatur sapiente sed eveniet esse rerum nemo.</p>
+	<button>Click me</button>
+	<script>
+		const button=document.querySelector('button');
+		// button.onclick=highlight;
+		// function highlight(){
+		// 	const p=document.querySelector("p");
+		// 	p.style.backgroundColor="yellow"
+		// }
+			// button.onclick = ()=>{
+			// 	const p=document.querySelector("p");
+			// 	p.style.backgroundColor="yellow"
+			// }
+			// button.onclick = ()=>{
+			// 	const p=document.querySelector("p");
+			// 	p.innerHTML="Hello World";
+			// }
+
+			// const a = [2,4,6,8];
+			// const newarr = a.map((item)=>item+2)
+			// console.log("array",newarr);
+
+			button.addEventListener("click", select);
+			function select(){
+				const p=document.querySelector("p");
+				p.innerHTML="Hello World";
+			}
+			button.addEventListener("click",change);
+			function change(){
+				const p=document.querySelector("p");
+				p.style.backgroundColor="yellow"
+			}
+
+	</script>
+</body>
+</html>
