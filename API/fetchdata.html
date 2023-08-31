@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Quotes</h1>
+	<ul></ul>
+	<script>
+		const url="https://type.fit/api/quotes";
+		fetch(url)
+		.then((res)=> res.json() )
+		.then((data)=>{ 
+			console.log("data",data)
+			const list = document.querySelector("ul");
+			//  for(let i=0;i<data.length;i++){
+			// 	 const li1=document.createElement("li");
+			// 	 li1.innerHTML=data[i].text 
+			// 	 const li2=document.createElement("li");
+			// 	 li2.innerHTML=data[i].author
+			// 	 list.appendChild(li1);
+			// 	 list.appendChild(li2);
+
+			//  }
+			let temp="";
+			for(let i=0;i<data.length;i++){
+				temp+=`<li>${data[i].text}</li>`
+				temp+= `<li>${data[i].author}</li>`
+			}
+			list.innerHTML=temp;
+		})
+		.catch((err)=>console.log("error"))
+	</script>
+</body>
+</html>
