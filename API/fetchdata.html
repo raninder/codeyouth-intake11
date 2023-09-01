@@ -11,10 +11,11 @@
 	<ul></ul>
 	<script>
 		const url="https://type.fit/api/quotes";
-		fetch(url)
-		.then((res)=> res.json() )
+		fetch(url)  //promise to fetch data from api
+		.then((res)=> res.json() ) //convert data to json format
 		.then((data)=>{ 
 			console.log("data",data)
+			//add data to a list
 			const list = document.querySelector("ul");
 			//  for(let i=0;i<data.length;i++){
 			// 	 const li1=document.createElement("li");

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		fetch('https://jsonplaceholder.typicode.com/posts',{
+			method: 'POST',
+			body: JSON.stringify({
+				"userId": 16,
+				"id": 100,
+				"title": "id minus libero illum nam ad officiis",
+				"body": "Body body body"
+			}),
+			headers:{
+  			'Accept': 'application/json',
+  			'Content-Type': 'application/json'
+			}
+		})
+		.then(res=>res.json())
+		.then(data=>{ console.log("data",data)})
+		.catch(err=>{ console.error(err)})
+	</script>
+</body>
+</html>

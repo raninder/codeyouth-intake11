@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		table,tr,td{
+			border:1px solid;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+
+	<script>
+		fetch('http://universities.hipolabs.com/search?country=Canada')
+		.then(res=>res.json())
+		.then((data)=>{
+		console.log("data",data)
+		// data.forEach(element => {
+		// 	const h1=document.createElement("h1");
+		// 	h1.innerHTML=element.name;
+		// 	const p=document.createElement("p");
+		// 	p.innerHTML=element['state-province'];
+		// 	document.body.appendChild(h1);
+		// 	document.body.appendChild(p);
+		// });
+			const table=document.createElement("table");
+			let temp="";
+		for(let i=0;i<10;i++){
+			temp+= `<tr><td>${data[i].name}</td>`
+				temp+=`<td>${data[i]['state-province']}</td></tr>`
+			table.innerHTML=temp;
+		// table.appendChild(temp);
+		}
+		document.body.appendChild(table);
+		// table.classList.add('table');
+		})
+		.catch(error=>console.error(error))
+	</script>
+</body>
+</html>
+
+
