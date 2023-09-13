@@ -1,0 +1,58 @@
+- Introduction to databases
+https://www.elephantsql.com/blog/databases-for-beginners-what-is-a-database-what-is-postgresql.html
+https://www.programiz.com/sql/database-introduction
+
+- different types of keys
+https://www.learncomputerscienceonline.com/database-keys/
+
+- entity Relationaship model
+https://www.javatpoint.com/dbms-er-model-concept
+
+- Installation postgresql
+https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql/
+
+database- organised collection of data, collection of tables
+DBMS- software to manage database
+RDBMS- relational DBMS- data is organised in tables
+primary key- attribute which uniquely identifies a record in a table
+Foreign key- primary key of another table which is used to link two tables
+
+tutorial: https://lgatto.github.io/sql-ecology/
+https://www.w3resource.com/sql-exercises/
+
+commands:
+1. creating database
+postgres# CREATE DATABASE db8;
+
+ 2. to check database list
+ \l 
+
+ 3. to clear screen
+ \! clear
+
+ 4. connect to database
+ \c db8;
+
+ 5. create a table
+ CREATE TABLE table_name
+(
+  column1 datatype [ NULL | NOT NULL ],
+  column2 datatype [ NULL | NOT NULL ],
+  ...
+);
+
+https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-data-types/
+
+CREATE TABLE users ( id SERIAL PRIMARY KEY, name VARCHAR(50), address TEXT, marks INT, dob DATE);
+
+6. to check tables in database
+\dt
+
+7. schema of a table
+\d tablename;
+
+8. insert data into table
+INSERT INTO users(name,address,marks,dob) VALUES('John','Canada',80,'10-07-2011');
+
+9. view data in a table
+SELECT * FROM users;
