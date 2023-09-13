@@ -302,3 +302,8 @@ let randomNum = Math.floor(Math.random()*101);
 
         // Make the a tag in the document open google.com in a new tab when it is clicked.
     </script>
+
+Javascript tutorial
+    https://javascript.info/?mc_cid=f0a26b3342&mc_eid=3af43d521d
+Scrum tutorial
+    https://codeyouth.slack.com/files/U049L95TV6G/F05RUQX9RLN/2020-scrum-guide-us.pdf
