@@ -56,3 +56,16 @@ INSERT INTO users(name,address,marks,dob) VALUES('John','Canada',80,'10-07-2011'
 
 9. view data in a table
 SELECT * FROM users;
+
+10. Alter table - add column, drop column, add constraint like primary key, drop constraint,change column data types
+ ALTER TABLE users
+ ADD age INT;
+ 
+ ALTER TABLE users
+ DROP COLUMN age;
+
+ ALTER TABLE users
+ ADD PRIMARY KEY(id);
+
+ 11. create table with foriegn key:
+ CRAETE TABLE orders (order_id SERIAL primary key,item VARCHAR(20),amount INT, user_id INT REFERENCES users(id) ON DELETE CASCADE)
