@@ -69,3 +69,21 @@ SELECT * FROM users;
 
  11. create table with foriegn key:
  CRAETE TABLE orders (order_id SERIAL primary key,item VARCHAR(20),amount INT, user_id INT REFERENCES users(id) ON DELETE CASCADE)
+
+Queries:
+
+ list all students that haven't added their Github username to their account yet 
+
+
+Get the names of all of the students from a single cohort. 
+
+Get all of the students that don't have an email or phone number. 
+
+Select the total number of students who were in the first 3 cohorts. 
+
+Get all of the students without a gmail.com account and a phone number. 
+
+A student's end date will be NULL when they are currently enrolled in Bootcamp. Get all of the students currently enrolled. 
+
+Get the names of all students enrolled in cohorts
+
