@@ -8,7 +8,7 @@ app.get('/profile',(req,res)=>
 res.send("Profile page")
 )
 app.get('/about',(req,res)=>
-res.send("About us page")
+res.send("<h1>About us page<h1>")
 )
 const data= [
 		{id:1,
