@@ -12,5 +12,10 @@
 		<li>two</li>
 		<li>three</li>
 	</ul>
+	users: <% users.forEach((ele)=>{ %>
+		<p><%= ele.id %></p>
+		<p><%= ele.name %></p>
+	<% }) %>
+
 </body>
 </html>
