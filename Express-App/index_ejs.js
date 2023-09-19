@@ -1,17 +1,33 @@
 const express = require('express')
 const app = express();
-const data = require('./data')
+const {data,message} = require('./data')
 console.log("data",data)
 
+message()
 app.set("view engine","ejs")
 app.get('/',(req,res)=>
-res.render('index',{user:{id:2,name:'Alex',address:'Canada'}})
-// res.render('index',{users:data})
+// res.render('index',{user:{id:2,name:'Alex',address:'Canada'}})
+res.render('form_data')
 )
 
 app.get('/users',(req,res)=>
 res.render('test',{users:data})
 )
+
+app.get('/alldata',(req,res)=>{
+res.json(data)
+
+}
+)
+
+app.use(express.urlencoded())
+app.post("/post",(req,res)=>{
+	const newdata = req.body;
+	// res.send(newdata)
+	data.push(newdata)
+	res.redirect('/alldata')
+})
+
 
 // app.get('/users/:id',(req,res)=>{
 // 	const id = Number(req.params.id);
