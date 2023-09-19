@@ -16,4 +16,7 @@ const data = [
  	age:25
  },
 ];
-module.exports = data
+function message(){
+	console.log("hello")
+}
+module.exports = {data,message}
