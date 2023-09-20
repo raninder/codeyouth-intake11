@@ -36,8 +36,9 @@ app.post("/post",(req,res)=>{
 // }
 // )
 console.log("uname")
-app.get('/users/:id',(req,res)=>{
-	const uname = req.params.id;
+app.get('/users/:name',(req,res)=>{
+	const uname = req.params.name;
+	// res.send(`name:${uname} `)
 	let user1 = data.find((ele)=>ele.name==uname)
 	res.send(user1)
 }
