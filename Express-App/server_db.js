@@ -10,20 +10,20 @@ const pool = new Pool({
   port: 5432,
 })
 
-pool.connect((err, client, release) => {
-	if (err) {
-			return console.error(
-					'Error acquiring client', err.stack)
-	}
-	client.query('SELECT NOW()', (err, result) => {
-			release()
-			if (err) {
-					return console.error(
-							'Error executing query', err.stack)
-			}
-			console.log("Connected to Database !")
-	})
-})
+// pool.connect((err, client, release) => {
+// 	if (err) {
+// 			return console.error(
+// 					'Error acquiring client', err.stack)
+// 	}
+// 	client.query('SELECT NOW()', (err, result) => {
+// 			release()
+// 			if (err) {
+// 					return console.error(
+// 							'Error executing query', err.stack)
+// 			}
+// 			console.log("Connected to Database !")
+// 	})
+// })
 
 app.get('/data', (req,res)=>{
 	pool.query('select * from test',(err,result)=>{
@@ -51,9 +51,11 @@ res.render('form_data')
 app.use(express.urlencoded())
 
 app.post('/data',(req,res)=>{
-	const id=Number(req.body.id);
+	// const {id,name,age} = req.body;
+	const id=req.body.id;
 	const name=req.body.name;
 	const age= parseInt(req.body.age);
+	console.log('id',id)
 	pool.query('insert into test(id,name,age) values($1,$2,$3)',[id,name,age],(err,result)=>{
 		if(err)
 		throw err;
@@ -62,5 +64,27 @@ app.post('/data',(req,res)=>{
 	})
 })
 	
+app.put('/data/:id',(req,res)=>{
+	const id=req.params.id;
+	const name= req.body.name;
+	pool.query("UPDATE test SET name=$1 where id=$2",[name,id], (err,result)=>{
+	if(err)
+	throw err
+	res.redirect('/data')
+	}
+	)
+})
+
+app.delete('/data/:id',(req,res)=>{
+	const id=req.params.id;
+
+	pool.query("DELETE from test where id=$1",[id], (err,result)=>{
+	if(err)
+	throw err
+	res.redirect('/data')
+	}
+	)
+})
+
 app.listen(3000,()=>console.log("server running"))
 
